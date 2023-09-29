@@ -1,16 +1,11 @@
-include(stdio.h)
-int main (int ac, char **av)
+#include <unistd.h>
+void ft_putchar(char c)
 {
-    void ac;
-    void av;
-    write(1, "smert rusni"/n, 14);
+    write (1, &c, 1);
 }
 
-int ft_strlen(char *str)
+
+int main(void) 
 {
-    int i;
-    i = 0;
-    if(str[i] != '\0')
-        i++;
-    return (i);
+	ft_putchar('a');
 }
